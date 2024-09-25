@@ -2,72 +2,238 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RWDSBXG9NJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWDSBXG9NJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-RWDSBXG9NJ');
-</script>
+        gtag('config', 'G-RWDSBXG9NJ');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <section class="intro" id="home">
-        <!-- Other content -->
-        <div class="custom-marquee">
-            <p>Welcome to my website! Scroll through and explore.</p>
-        </div>
-    </section>
     <title>Your Profile</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Add internal CSS -->
+    <style>
+        /* Apply a background image */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Add your background image here */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* Style for the main header */
+        .main-header {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7); /* Slightly transparent black background */
+            padding: 50px;
+        }
+
+        .main-header h1 {
+            font-size: 48px;
+            color: #FFD700; /* Gold color */
+        }
+
+        .main-header p {
+            font-size: 20px;
+            color: #f0f0f0;
+        }
+
+        /* Style for the custom marquee */
+        .custom-marquee {
+            background-color: rgba(34, 34, 34, 0.8);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .custom-marquee p {
+            animation: scroll-left 10s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Style for the skills section with a box */
+        #skills {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adding box shadow */
+        }
+
+        #skills h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #FFD700; /* Gold color */
+            margin-bottom: 20px;
+        }
+
+        .skill-table {
+            width: 100%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        .skill-table th, .skill-table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-table th {
+            background-color: #FFD700;
+            color: #000;
+        }
+
+        /* About Me Section */
+        #about img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            max-width: 150px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .intro-text {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        /* Media Section */
+        #media {
+            padding: 20px;
+            text-align: center;
+        }
+
+        audio, video {
+            margin: 20px 0;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 20px;
+            background-color: rgba(34, 34, 34, 0.8);
+            border-radius: 10px;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        #contact h2 {
+            text-align: center;
+            color: #FFD700;
+        }
+
+        #contact table {
+            margin: auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #contact th, #contact td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .main-header h1 {
+                font-size: 36px;
+            }
+            
+            #skills {
+                width: 100%;
+            }
+
+            #about img {
+                max-width: 120px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <h1>Nishtha Joshi</h1>
         <p class="custom-paragraph">Pre Final Year student at VESIT || Creative Thinker</p>
     </header>
 
-    
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="Nishtha_joshi_Deputy_sec.jpg" alt="Your Profile Photo">
-        
-        <p class="intro-text">
-            <strong>Hello there! 🚀</strong> I'm an enthusiastic individual deeply passionate about the dynamic realms of <span class="highlight">web development</span>
-                and <span class="highlight">design</span>. 🎨 My journey is fueled by the joy of crafting <span class="highlight">user-centric experiences</span> that seamlessly merge creativity and technology. 💡
-                I thrive on embracing and mastering the latest advancements in the ever-evolving digital landscape.
-        </p>
+    <section class="intro" id="home">
+        <div class="custom-marquee">
+            <p>Welcome to my website! Scroll through and explore.</p>
+        </div>
     </section>
 
-<section id="skills">
-    <table class="skill-table">
-        <tr>
-            <th>Skill</th>
-            <th>Level</th>
-        </tr>
-        <tr>
-            <td>HTML</td>
-            <td>Advanced</td>
-        </tr>
-        <tr>
-            <td>CSS</td>
-            <td>Intermediate</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td>Beginner</td>
-        </tr>
-        
-       
-        <tr>
-            <td>Git</td>
-            <td>Intermediate</td>
-        </tr>
-       
-    </table>
+<section id="about">
+    <h2 style="color: black;">About Me</h2> <!-- Updated to make the header black -->
+ 
+    <p class="intro-text" style="color: black;"> <!-- Updated to make the intro text black -->
+        <strong>Hello there! 🚀</strong> I'm an enthusiastic individual deeply passionate about the dynamic realms of 
+        <span class="highlight">web development</span> and <span class="highlight">design</span>. 🎨 My journey is 
+        fueled by the joy of crafting <span class="highlight">user-centric experiences</span> that seamlessly merge 
+        creativity and technology. 💡 I thrive on embracing and mastering the latest advancements in the ever-evolving 
+        digital landscape.
+    </p>
 </section>
-    
+
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <table class="skill-table">
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>Git</td>
+                <td>Intermediate</td>
+            </tr>
+        </table>
+    </section>
+
     <section id="media">
         <h2>Media</h2>
         <audio controls>
@@ -78,9 +244,8 @@
             <source src="video.mp4" type="video/mp4">
             Your browser does not support the video element.
         </video>
-        
     </section>
-    
+
     <section id="contact">
         <h2>Contact Information</h2>
         <table>
@@ -92,18 +257,14 @@
                 <th>LinkedIn</th>
                 <td><a href="https://www.linkedin.com/in/joshi-nishtha/?originalSubdomain=in" target="_blank">Nishtha's LinkedIn Profile</a></td>
             </tr>
-
             <tr>
                 <th>Github</th>
                 <td><a href="https://github.com/joshinishtha99" target="_blank">Github</a></td>
             </tr>
-
             <tr>
                 <th>Leetcode</th>
                 <td><a href="https://leetcode.com/joshinishtha99/" target="_blank">Leetcode</a></td>
             </tr>
-
-            
         </table>
     </section>
 </body>
